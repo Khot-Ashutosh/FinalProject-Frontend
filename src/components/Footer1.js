@@ -11,7 +11,7 @@ import logo from "./logo1.jpeg";
 const Footer1 = () => {
   return (
     <footer className="page-footer bg-secondary">
-      <div className="container text-center text-md-left mt-5">
+      <div className="container text-center text-md-left">
         <div className="row">
           <div className="col-md-3 mx-auto mb-4">
             <br />

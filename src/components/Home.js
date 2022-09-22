@@ -1,6 +1,6 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import img1 from "./Bus1.jpg";
-import Footer1 from "./Footer1";
+//import Footer1 from "./Footer1";
 import Header from "./Header";
 //import { Link } from "react-router-dom";
 
@@ -26,17 +26,19 @@ function Home() {
           </h1>
           <hr />
           <div className="d-grid gap-4 d-md-flex justify-content-md-end">
-            <button type="button" class="btn btn-outline-danger">
-              Login
-            </button>
-
-            <button type="button" class="btn btn-outline-danger">
-              SignUp
-            </button>
+            <Link to="/login">
+              <button type="button" class="btn btn-secondary">
+                Login
+              </button>
+            </Link>
+            <Link to="/signup">
+              <button type="button" class="btn btn-secondary">
+                SignUp
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-      <Footer1 />
     </div>
   );
 }
